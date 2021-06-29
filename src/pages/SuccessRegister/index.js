@@ -3,7 +3,7 @@ import {Container} from './styles'
 const SuccessRegister = () =>{
   return(
     <Container>
-
+      <h1>SuccessRegister</h1>
     </Container>
   );
 }

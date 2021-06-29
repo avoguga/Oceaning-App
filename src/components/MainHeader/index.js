@@ -1,11 +1,11 @@
 import React from 'react';
 import {Container} from './styles'
-const Register = () =>{
+const MainHeader = () =>{
   return(
     <Container>
-      <h1>Register</h1>
+      <h1>MainHeader</h1>
     </Container>
   );
 }
 
-export default Register;
+export default MainHeader;

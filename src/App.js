@@ -1,8 +1,13 @@
-function App() {
-  return (
-    <div>
+import React from 'react';
+import GlobalStyles from './styles/GlobalStyles';
 
-    </div>
+import Home from './pages/Home'
+const App = () =>{
+  return(
+    <>
+      <GlobalStyles/>
+      <Home/>
+    </>
   );
 }
 
