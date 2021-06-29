@@ -9,7 +9,7 @@ const AppRoutes = () => (
     <Layout>
         <Switch>
             <Route path="/" exact component={Home} />
-            <Route path="/sucess/:type" exact component={Register} />
+            <Route path="/register/" exact component={Register} />
         </Switch>
     </Layout>
 );
