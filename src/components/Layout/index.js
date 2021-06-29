@@ -4,7 +4,6 @@ import { Grid } from './styles'
 
 import MainHeader from '../MainHeader';
 import Content from '../Content';
-import MainFooter from '../MainFooter';
 
 const Layout = ({children}) => {
   return(
@@ -13,7 +12,6 @@ const Layout = ({children}) => {
       <Content>
         {children}
       </Content>
-      <MainFooter/>
     </Grid>
   )
   }

@@ -24,5 +24,6 @@ export const Container = styled.div`
     color: #78748C;
     width: 650px;
     text-align: center;
+    margin-bottom: 178px;
   }
 `;

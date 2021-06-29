@@ -1,6 +1,6 @@
 import React from 'react';
 import {Container} from './styles'
-
+import StartButton from '../../components/StartButton'
 const Home = () =>{
   return(
     <Container>
@@ -13,6 +13,7 @@ const Home = () =>{
       <p>
       Faça parte dessa jornada junto com a Oceaning e conquiste o mundo com suas habilidades de programação.
       </p>
+      <StartButton/>
     </Container>
   );
 }

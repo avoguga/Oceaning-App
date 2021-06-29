@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, Button} from './styles';
 import ArrowRight from '../../assets/icon-1.svg'
 
-const MainFooter = () => {
+const StartButton = () => {
   return(
     <Container>
       <Button href="/register">
@@ -13,4 +13,4 @@ const MainFooter = () => {
   );
 }
 
-export default MainFooter;
+export default StartButton;
