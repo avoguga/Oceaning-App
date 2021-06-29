@@ -17,7 +17,6 @@ export const Grid = styled.div`
   'MH'
   'CT'
   'MF';
-
   height: 100vh;
   background: url(${bg});
 `;
