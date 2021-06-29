@@ -1,11 +1,11 @@
 {
-  "name":[
+  "name": [
     {
-      "name": "teste",
-      "id": "1"
+      "name": "Gustavo",
+      "id": 1
     }
   ],
-  "skills":[
+  "skills": [
     {
       "skillName": "React",
       "id": "1"

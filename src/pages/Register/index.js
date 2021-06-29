@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, InputArea} from './styles'
+import { Container } from './styles'
 import Input from '../../components/InputRegister';
 
 const Register = () =>{
