@@ -1,54 +1,19 @@
 {
-  "name": [
+  "posts": [
     {
-      "name": "Gustavo",
-      "id": 1
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
     }
   ],
-  "skills": [
+  "comments": [
     {
-      "skillName": "React",
-      "id": "1"
-    },
-    {
-      "skillName": "React Native",
-      "id": "2"
-    },
-    {
-      "skillName": "PHP",
-      "id": "3"
-    },
-    {
-      "skillName": "Java",
-      "id": "4"
-    },
-    {
-      "skillName": "JavaScript",
-      "id": "5"
-    },
-    {
-      "skillName": "C#",
-      "id": "6"
-    },
-    {
-      "skillName": "C++",
-      "id": "7"
-    },
-    {
-      "skillName": "Ruby",
-      "id": "8"
-    },
-    {
-      "skillName": "CSS",
-      "id": "9"
-    },
-    {
-      "skillName": "HTML5",
-      "id": "10"
-    },
-    {
-      "skillName": "NodeJs",
-      "id": "11"
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
     }
-  ]
+  ],
+  "profile": {
+    "name": "typicode"
+  }
 }

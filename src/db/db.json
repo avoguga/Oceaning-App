@@ -1,0 +1,60 @@
+{
+  "name": [
+    {
+      "name": "Gustavo",
+      "id": 1
+    }
+  ],
+  "chosenSkills": [
+    {
+      "skill": "",
+      "id": 1
+    }
+  ],
+  "skills": [
+    {
+      "skillName": "React",
+      "id": "1"
+    },
+    {
+      "skillName": "React Native",
+      "id": "2"
+    },
+    {
+      "skillName": "PHP",
+      "id": "3"
+    },
+    {
+      "skillName": "Java",
+      "id": "4"
+    },
+    {
+      "skillName": "JavaScript",
+      "id": "5"
+    },
+    {
+      "skillName": "C#",
+      "id": "6"
+    },
+    {
+      "skillName": "C++",
+      "id": "7"
+    },
+    {
+      "skillName": "Ruby",
+      "id": "8"
+    },
+    {
+      "skillName": "CSS",
+      "id": "9"
+    },
+    {
+      "skillName": "HTML5",
+      "id": "10"
+    },
+    {
+      "skillName": "NodeJs",
+      "id": "11"
+    }
+  ]
+}

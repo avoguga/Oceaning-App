@@ -1,6 +1,7 @@
 import React, {useState, useRef, useEffect} from 'react';
-import { Container, InputForm, Button, InputArea} from './styles';
-import ArrowRight from '../../assets/icon-1.svg'
+import { Container, InputForm, Button, InputArea, Skills, ContentArea, DataChip} from './styles';
+import ArrowRight from '../../assets/icon-1.svg';
+import Right from '../../assets/icon-4.svg';
 import { useHistory } from 'react-router';
 
 const Input = () => {
@@ -9,8 +10,10 @@ const Input = () => {
 
   const [data, setData]=useState([]);
 
+  const [chosenSkills, setChosenSkills]=useState([]);
+
   const getData=()=>{
-    fetch('http://localhost:3333/name'
+    fetch('http://localhost:3333/skills'
     ,{
       headers : { 
         'Content-Type': 'application/json',
@@ -34,15 +37,15 @@ const Input = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const names = { name }
+    const skillsSetSkills = { skills }
     
-    fetch('http://localhost:3333/name', {
+    fetch('http://localhost:3333/skills', {
       method: 'POST',
       headers: { 
         'Content-Type': 'application/json',
         'Accept': 'application/json'
        },
-       body: JSON.stringify(names)
+       body: JSON.stringify(skillsSetSkills)
     }).then(() =>{
       console.log('Nome adicionado');
     })
@@ -50,13 +53,28 @@ const Input = () => {
     history.push("/skills")
   }
 
+  const getDataSkills = () => {
+   
+     const info = data.filter((skills) => {
+      if (searchTerm === "") {
+        return ""
+      } else if (skills.skillName.toLowerCase().includes(searchTerm.toLowerCase())) {
+        return skills.skillName.current
+      }
+    })
+    console.log(info)
+    return info;
+  }
+
   const [color, setColor] = useState("#6A6879");
 
   const [font, setFont] = useState("#6A6879");
 
-  const [name, setName] = useState("");
+  const [skills, setSkills] = useState("");
 
-  const [nameError, setNameError] = useState("Preencha esse campo");
+  const [searchTerm, setSearchTerm] = useState("");
+
+  const [skillsError, setSKillsError] = useState("Preencha esse campo");
 
 
   const setStyle = (color, font) => {
@@ -73,28 +91,47 @@ const Input = () => {
   }
 
   return(
-    <>
     <Container>
-      <InputArea 
-      inputColor={color}
-      onChange={e => setStyle(e.target.color)}>
-        <InputForm
-        ref={inputRef}
+      <ContentArea>
+        <InputArea 
         inputColor={color}
-        inputFont={font} 
-        placeholder="Digite seu nome"
-        onChange={e => { setStyle(e.target.color); setName(e.target.value)}}
-        type="text"
-        value={name}
-        />
-      </InputArea>
-      <Button onClick={handleSubmit}>
-        <h2>CONTINUAR</h2>
-        <img alt="Arrow Right" src={ArrowRight}/>
-      </Button>
+        onChange={e => setStyle(e.target.color)}>
+          <InputForm
+          ref={inputRef}
+          inputColor={color}
+          inputFont={font} 
+          placeholder="Digite uma habilidade"
+          onChange={e => { setStyle(e.target.color); setSearchTerm(e.target.value)}}
+          type="text"
+          value={searchTerm}
+          />
+        </InputArea>
+        
+        <Button onClick={handleSubmit}>
+          <h2>FINALIZAR</h2>
+          <img alt="Arrow Right" src={ArrowRight}/>
+        </Button>
+      </ContentArea>
+      <DataChip onClick={getDataSkills}>
+      {
+            data.filter((skills) => {
+              if (searchTerm === "") {
+                return ""
+              } else if (skills.skillName.toLowerCase().includes(searchTerm.toLowerCase())) {
+                return skills
+              }
+            }).map((skills, key) => {
+              return(
+                <div key={key}>
+                  <h2>{skills.skillName}</h2>
+                  <img alt="Right" src={Right}/>
+                </div>
+              )
+            })
+          }
+      </DataChip>
+      <Skills>Nenhuma habilidade adicionada</Skills>
     </Container>
-    <p>{nameError}</p>
-    </>
   );
 }
 

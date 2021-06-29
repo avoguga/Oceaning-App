@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import {Container} from './styles'
-
+import Input from '../../components/InputSkills'
 const Skills = () =>{
 
 const [data, setData]=useState([]);

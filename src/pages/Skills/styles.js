@@ -7,7 +7,7 @@ export const Container = styled.div`
   align-items: flex-start;
   justify-content: center;
   margin-left: 111px;
-  margin-top: 193px;
+  margin-top: 50px;
  > h2 {
     font-size: 38px;
     background: -webkit-linear-gradient(90deg, #FFDA15 -2.94%, #FFA215 105.98%);
@@ -24,6 +24,6 @@ export const Container = styled.div`
     font-size: 20px;
     color: #78748C;
     width: 650px;
-    margin-bottom: 178px;
+    margin-bottom: 108px;
   }
 `;
