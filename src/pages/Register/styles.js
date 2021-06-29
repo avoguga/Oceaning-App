@@ -28,10 +28,9 @@ export const Container = styled.div`
   }
 `;
 
-export const InputArea = styled.input`
-
-`;
-
-export const Input = styled.input`
-
+export const InputArea = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 90%;
 `;

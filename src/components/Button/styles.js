@@ -5,6 +5,7 @@ export const Container = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 `;
 
 export const ColorButton = styled.a`
@@ -12,8 +13,8 @@ export const ColorButton = styled.a`
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 371px;
-  height: 70px;
+  width: 298px;
+  height: 66px;
   border-radius: 50px;
   color: #131218;
   > img{
