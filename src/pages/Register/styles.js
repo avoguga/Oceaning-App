@@ -27,10 +27,3 @@ export const Container = styled.div`
     margin-bottom: 178px;
   }
 `;
-
-export const InputArea = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 90%;
-`;
