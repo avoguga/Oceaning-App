@@ -1,9 +1,14 @@
 import React from 'react';
-import {Container} from './styles'
-const MainFooter = () =>{
+import { Container, Button} from './styles';
+import ArrowRight from '../../assets/icon-1.svg'
+
+const MainFooter = () => {
   return(
     <Container>
-      <h1>MainFooter</h1>
+      <Button href="/register">
+        <h2>COMEÇAR AGORA</h2>
+        <img alt="Arrow Right" src={ArrowRight}/>
+      </Button>
     </Container>
   );
 }
