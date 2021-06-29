@@ -4,7 +4,7 @@ export const Container = styled.div`
   display: flex;
   flex-direction: row;
   width: 683px;
-  border-bottom: 5px solid #363443;
+  border-bottom: 5px solid ${props => props.inputColor || "#15F7D9"};
 `;
 
 export const InputForm = styled.input`
@@ -13,8 +13,8 @@ export const InputForm = styled.input`
   font-size: 40px;
   font-weight: 600;
   background-color: transparent;
-  color: ${props => props.inputColor};
+  color: ${props => props.inputColor || "#15F7D9"};
   ::placeholder{
-    color: ${props => props.inputFont};
+    color: ${props => props.inputFont || "#15F7D9"};
   }
 `;

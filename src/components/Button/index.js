@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {setState} from 'react';
 import { Container, ColorButton} from './styles';
 import ArrowRight from '../../assets/icon-1.svg'
 

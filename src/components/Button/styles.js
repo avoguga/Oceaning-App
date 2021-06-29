@@ -5,10 +5,9 @@ export const Container = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  cursor: pointer;
 `;
 
-export const ColorButton = styled.a`
+export const ColorButton = styled.button`
   background: linear-gradient(90deg, #15FFAB 0%, #15F1FF 100%);
   display: flex;
   justify-content: center;
