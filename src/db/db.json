@@ -5,9 +5,9 @@
       "id": 1
     }
   ],
-  "chosenSkills": [
+  "chosenskills": [
     {
-      "skill": "",
+      "chosenSkills": "React Native",
       "id": 1
     }
   ],

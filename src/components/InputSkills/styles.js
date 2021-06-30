@@ -6,7 +6,7 @@ export const Container = styled.div`
   width: 90%;
 
   > h2{
-    color: aliceblue;
+    color: #fff;
   }
 `;
 
@@ -62,6 +62,22 @@ export const Skills = styled.div`
   margin-top: 10px;
 `;
 
+export const ChosenSkills = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background: linear-gradient(360deg, #FFDA15 0%, #FFA215 102.09%);
+  width: 863px;
+  height: 80px;
+  border-radius: 20px;
+
+  font-size: 22px;
+  color: #131218;
+  margin-top: 10px;
+  cursor: pointer;
+`;
+
 export const DataChip = styled.div`
   display: flex;
   flex-direction: row;
@@ -70,6 +86,7 @@ export const DataChip = styled.div`
   margin-top: 10px;
   width: 1000px;
   > div{
+    cursor: pointer;
     display: flex;
     flex-direction: row;
     justify-content: center;
