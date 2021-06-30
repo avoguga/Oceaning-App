@@ -65,7 +65,7 @@ const Input = () => {
   const handleSubmit = (e) => {
     
 
-    history.push("/skills")
+    history.push("/successregister")
   }
 
   const getDataSkills = (e) => {
