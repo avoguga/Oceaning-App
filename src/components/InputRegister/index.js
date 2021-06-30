@@ -66,12 +66,6 @@ const Input = () => {
 
   const inputRef = useRef(null);
 
-  const handlerClick = () => {
-    if (inputRef.current.value === "") {
-
-    }
-  }
-
   return(
     <>
     <Container>
