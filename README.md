@@ -10,9 +10,9 @@ No diretorio do projeto, você rode os seguintes scripts:
 
 Para rodar o app para desenvolvimento na porta http://localhost:3000
 
-## Dentro da pasta db rode `json-server db.json -p 3333`
+### Dentro da pasta db rode `json-server db.json -p 3333`
 
-Para rodar o servidor da FAKE-API
+Para rodar o servidor da FAKE-API na porta http://localhost:3333
 
 
 "# Oceaning-App" 
